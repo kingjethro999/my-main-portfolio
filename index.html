@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>King Jethro - Portfolio</title>
     <link rel="icon" href="jethrofav.png" type="image/png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <script type="module" src="https://cdnjs.cloudflare.com/ajax/libs/ionicons/7.2.2/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://cdnjs.cloudflare.com/ajax/libs/ionicons/7.2.2/ionicons/ionicons.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.css">
@@ -819,7 +820,7 @@
                 </a>
             </p>
 
-            <p class="copyright" style="height: fit-content !important;">&copy; 2024 <a href="https://github.com/kingjethro999">JethWebz Development</a>. All
+            <p class="copyright" style="height: fit-content !important;">&copy; <span id="year"></span> <a href="https://github.com/kingjethro999">JethWebz Development</a>. All
                 rights reserved
             </p>
 
@@ -836,6 +837,12 @@
         <ion-icon name="arrow-up"></ion-icon>
     </a>
 
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script>
+        // JavaScript to dynamically update the year
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
