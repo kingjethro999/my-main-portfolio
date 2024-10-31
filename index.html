@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>King Jethro - Portfolio</title>
+    <script type="module" src="https://cdnjs.cloudflare.com/ajax/libs/ionicons/7.2.2/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://cdnjs.cloudflare.com/ajax/libs/ionicons/7.2.2/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400;700&family=Saira+Stencil+One&display=swap"
+        rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <div class="background-glow"></div>
+
+    <!-- Navigation -->
+    <nav>
+        <h1 class="logo">
+            <a href="https://github.com/kingjethro999">Jethro Jerry<span>.</span></a>
+        </h1>
+
+        <input type="checkbox" id="nav-toggle">
+        <label for="nav-toggle" class="hamburger" aria-label="Toggle navigation"></label>
+
+        <ul class="nav-links">
+            <li><a href="#"><ion-icon name="home-outline"></ion-icon>Home</a></li>
+            <li><a href="#skills"><ion-icon name="trophy-outline"></ion-icon>Skills</a></li>
+            <li><a href="#projects"><ion-icon name="code-slash-outline"></ion-icon>Projects</a></li>
+            <li><a href="#contact"><ion-icon name="mail-outline"></ion-icon>Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home top">
+        <div class="hero-content">
+            <h1 class="hero-title logo"><a href="#">King Jethro</a></h1>
+            <p class="hero-subtitle">Full Stack Developer & UI/UX Designer</p>
+            <a href="#contact" class="cta-button">
+                <ion-icon name="chatbubbles-outline"></ion-icon>
+                Let's Connect
+            </a>
+        </div>
+    </section>
+
+    <div class="about-container about" id="about">
+        <div class=" about-wrapper">
+            <figure class="about-banner">
+                <div class="about-image-container">
+                    <img src="./assets/image/hero-img.png" alt="Profile Image" data-aos="zoom-in-up">
+                </div>
+            </figure>
+
+            <div class="about-content">
+                <p class="about-section-subtitle">About me</p>
+                <h2 class="about-section-title">
+                    Need a Creative Product?<br>
+                    I can Help You!
+                </h2>
+                <p class="about-section-text">
+                    Hi! I'm Jethro Jerry, a skilled software developer specializing in JavaScript,
+                    with expertise in web and mobile development, e-commerce solutions,
+                    and WordPress. With a focus on building high-quality, responsive
+                    applications, I excel in using modern frameworks like React, React Native,
+                    and Node.js. My background in e-commerce and CMS platforms allows
+                    me to deliver seamless, user-centered experiences, ensuring optimal
+                    performance and scalability across projects.
+                </p>
+                <div class="about-btn-group">
+                    <button class="about-btn about-btn-primary">HIRE ME</button>
+                    <a href="cv.pdf" download class="about-btn about-btn-secondary">DOWNLOAD CV</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="stats" id="stats">
+        <ul class="stats-list">
+
+            <li>
+                <a href="#" class="stats-card" data-aos="fade-up-right" data-aos-delay="0">
+
+                    <div class="card-icon">
+                        <img src="./assets/image/stats-card_icon-1.png" alt="Badge icon">
+                    </div>
+
+                    <h2 class="h2 card-title">
+                        5+ <strong>Years of Experience</strong>
+                    </h2>
+
+                    <ion-icon name="chevron-forward-outline"></ion-icon>
+
+                </a>
+            </li>
+
+            <li>
+                <a href="#" class="stats-card" data-aos="fade-up-right" data-aos-delay="200">
+
+                    <div class="card-icon">
+                        <img src="./assets/image/stats-card_icon-2.png" alt="Checkmark icon">
+                    </div>
+
+                    <h2 class="h2 card-title">
+                        12+ <strong>Completed Projects</strong>
+                    </h2>
+
+                    <ion-icon name="chevron-forward-outline"></ion-icon>
+
+                </a>
+            </li>
+
+            <li>
+                <a href="#" class="stats-card" data-aos="fade-up-right" data-aos-delay="400">
+
+                    <div class="card-icon">
+                        <img src="./assets/image/stats-card_icon-3.png" alt="Peoples rating icon">
+                    </div>
+
+                    <h2 class="h2 card-title">
+                        10+ <strong>Happy Clients</strong>
+                    </h2>
+
+                    <ion-icon name="chevron-forward-outline"></ion-icon>
+
+                </a>
+            </li>
+
+        </ul>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <h2 class="section-title">My Expertise</h2>
+
+        <div class="skills-switcher">
+            <button class="switch-btn" data-target="skills">
+                <ion-icon name="trophy-outline"></ion-icon>
+                My Services
+            </button>
+            <button class="switch-btn active" data-target="tools">
+                <ion-icon name="build-outline"></ion-icon>
+                Skills
+            </button>
+        </div>
+
+        <div class="skills-container" id="skills-content">
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <ion-icon name="color-palette-outline"></ion-icon>
+                    </div>
+                    <h3>Creative graphic design</h3>
+                    <ul>
+                        <li><ion-icon name="checkmark-circle-outline"></ion-icon>Visual identity design</li>
+                        <li><ion-icon name="checkmark-circle-outline"></ion-icon>Printed materials design</li>
+                        <li><ion-icon name="checkmark-circle-outline"></ion-icon>UI/UX workflow design</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <ion-icon name="code-slash-outline"></ion-icon>
+                    </div>
+                    <h3>Frontend development</h3>
+                    <ul>
+                        <li><ion-icon name="checkmark-circle-outline"></ion-icon>Responsive websites</li>
+                        <li><ion-icon name="checkmark-circle-outline"></ion-icon>Modern frameworks</li>
+                        <li><ion-icon name="checkmark-circle-outline"></ion-icon>Performance optimization</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <ion-icon name="diamond-outline"></ion-icon>
+                    </div>
+                    <h3>UX Design</h3>
+                    <ul>
+                        <li><ion-icon name="checkmark-circle-outline"></ion-icon>User research</li>
+                        <li><ion-icon name="checkmark-circle-outline"></ion-icon>Prototyping</li>
+                        <li><ion-icon name="checkmark-circle-outline"></ion-icon>User testing</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="skills-container active" id="tools-content">
+            <div class="skills-grid">
+                <div class="skill-item" data-aos="fade-up-right" data-aos-delay="0">
+                    <div class="skill-info">
+                        <div class="skill-name">
+                            <ion-icon name="logo-react"></ion-icon>
+                            React & Vue
+                        </div>
+                        <div class="skill-percentage">95%</div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 95%"></div>
+                    </div>
+                </div>
+                <div class="skill-item" data-aos="fade-up-right" data-aos-delay="200">
+                    <div class="skill-info">
+                        <div class="skill-name">
+                            <ion-icon name="logo-nodejs"></ion-icon>
+                            Node.js
+                        </div>
+                        <div class="skill-percentage">90%</div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 90%"></div>
+                    </div>
+                </div>
+                <div class="skill-item" data-aos="fade-up-right" data-aos-delay="400">
+                    <div class="skill-info">
+                        <div class="skill-name">
+                            <ion-icon name="server-outline"></ion-icon>
+                            MongoDB
+                        </div>
+                        <div class="skill-percentage">85%</div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 85%"></div>
+                    </div>
+                </div>
+                <div class="skill-item" data-aos="fade-up-right" data-aos-delay="600">
+                    <div class="skill-info">
+                        <div class="skill-name">
+                            <ion-icon name="git-branch-outline"></ion-icon>
+                            Git & GitHub
+                        </div>
+                        <div class="skill-percentage">92%</div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 92%"></div>
+                    </div>
+                </div>
+                <div class="skill-item" data-aos="fade-up-right" data-aos-delay="800">
+                    <div class="skill-info">
+                        <div class="skill-name">
+                            <ion-icon name="cube-outline"></ion-icon>
+                            Docker
+                        </div>
+                        <div class="skill-percentage">88%</div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 88%"></div>
+                    </div>
+                </div>
+                <div class="skill-item" data-aos="fade-up-right" data-aos-delay="1000">
+                    <div class="skill-info">
+                        <div class="skill-name">
+                            <ion-icon name="cloud-outline"></ion-icon>
+                            AWS
+                        </div>
+                        <div class="skill-percentage">80%</div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 80%"></div>
+                    </div>
+                </div>
+                <div class="skill-item" data-aos="fade-up-right" data-aos-delay="1200">
+                    <div class="skill-info">
+                        <div class="skill-name">
+                            <ion-icon name="logo-python"></ion-icon>
+                            Python
+                        </div>
+                        <div class="skill-percentage">97%</div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 97%"></div>
+                    </div>
+                </div>
+                <div class="skill-item" data-aos="fade-up-right" data-aos-delay="1400">
+                    <div class="skill-info">
+                        <div class="skill-name">
+                            <ion-icon name="logo-wordpress"></ion-icon>
+                            WordPress
+                        </div>
+                        <div class="skill-percentage">100%</div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 100%"></div>
+                    </div>
+                </div>
+                <div class="skill-item" data-aos="fade-up-right" data-aos-delay="1600">
+                    <div class="skill-info">
+                        <div class="skill-name">
+                            <img src="./web_19.2px.svg" alt="" srcset="">
+                            PHP
+                        </div>
+                        <div class="skill-percentage">85%</div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 85%"></div>
+                    </div>
+                </div>
+                <div class="skill-item" data-aos="fade-up-right" data-aos-delay="1800">
+                    <div class="skill-info">
+                        <div class="skill-name">
+                            <ion-icon name="server-outline"></ion-icon>
+                            MySQL
+                        </div>
+                        <div class="skill-percentage">80%</div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 80%"></div>
+                    </div>
+                </div>
+                <div class="skill-item" data-aos="fade-up-right" data-aos-delay="2000">
+                    <div class="skill-info">
+                        <div class="skill-name">
+                            <ion-icon name="logo-html5"></ion-icon>
+                            HTML5 & CSS3
+                        </div>
+                        <div class="skill-percentage">99%</div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 99%"></div>
+                    </div>
+                </div>
+                <div class="skill-item" data-aos="fade-up-right" data-aos-delay="2200">
+                    <div class="skill-info">
+                        <div class="skill-name">
+                            <ion-icon name="logo-javascript"></ion-icon>
+                            JavaScript
+                        </div>
+                        <div class="skill-percentage">88%</div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 88%"></div>
+                    </div>
+                </div>
+                <div class="skill-item" data-aos="fade-up-right" data-aos-delay="2400">
+                    <div class="skill-info">
+                        <div class="skill-name">
+                            <img src="./bootsrap.svg" alt="" srcset="">
+                            Bootstrap
+                        </div>
+                        <div class="skill-percentage">92%</div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 92%"></div>
+                    </div>
+                </div>
+                <div class="skill-item" data-aos="fade-up-right" data-aos-delay="2600">
+                    <div class="skill-info">
+                        <div class="skill-name">
+                            <ion-icon name="brush-outline"></ion-icon>
+                            PhotoShop
+                        </div>
+                        <div class="skill-percentage">70%</div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 70%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- projects section   -->
+    <article class="projects active" id="projects" data-page="projects">
+        <header>
+            <h2 class="article-title">Projects</h2>
+        </header>
+
+        <section class="projects-content">
+            <ul class="filter-list">
+                <li class="filter-item">
+                    <button class="active" data-filter-btn>All</button>
+                </li>
+                <li class="filter-item">
+                    <button data-filter-btn>Web development</button>
+                </li>
+                <li class="filter-item">
+                    <button data-filter-btn>UI/UX Design</button>
+                </li>
+            </ul>
+
+            <!-- Your existing project items list here -->
+            <ul class="projects-list">
+                <li class="projects-item  active" data-filter-item data-category="web development">
+                    <a href="https://launchfundr.online" target="_blank">
+
+                        <figure class="projects-img">
+                            <div class="projects-item-icon-box">
+                                <ion-icon name="eye-outline"></ion-icon>
+                            </div>
+
+                            <img src="./assets/image/project-18.jpg" alt="LaunchFundr" loading="lazy">
+                        </figure>
+                        <span class="project-texts">
+                            <h3 class="projects-title">LaunchFundr</h3>
+
+                            <p class="projects-category">Web Development <br> <span style="font-size: 12px !important;">
+                                    Astro &
+                                    Tailwind Css</span>
+                            </p>
+                        </span>
+                    </a>
+                    </a>
+                </li>
+
+                <li class="projects-item  active" data-filter-item data-category="ui/ux design">
+                    <a href="https://www.figma.com/design/nngiN0ih1qbsYJrYoYQZCf/Serene?node-id=0-1&t=RRlBYhrH2nsaBh0s-1"
+                        target="_blank">
+
+                        <figure class="projects-img">
+                            <div class="projects-item-icon-box">
+                                <ion-icon name="eye-outline"></ion-icon>
+                            </div>
+
+                            <img src="./assets/image/project-2.png" alt="Serene" loading="lazy">
+                        </figure>
+                        <span class="project-texts">
+                            <h3 class="projects-title">Serene</h3>
+
+                            <p class="projects-category">UI/UX Design <br> <span style="font-size: 12px !important;">
+                                    Figma</span>
+                            </p>
+                        </span>
+                    </a>
+                </li>
+
+                <li class="projects-item  active" data-filter-item data-category="web development">
+                    <a href="https://brandingcodemo.netlify.app" target="_blank">
+
+                        <figure class="projects-img">
+                            <div class="projects-item-icon-box">
+                                <ion-icon name="eye-outline"></ion-icon>
+                            </div>
+
+                            <img src="./assets/image/project-3.jpg" alt="Branding Co" loading="lazy">
+                        </figure>
+                        <span class="project-texts">
+                            <h3 class="projects-title">Branding Co</h3>
+
+                            <p class="projects-category">Web development <br> <span style="font-size: 12px !important;">
+                                    Html, Css &
+                                    JavaScript</span></p>
+                        </span>
+                    </a>
+                </li>
+
+                <li class="projects-item  active" data-filter-item data-category="ui/ux design">
+                    <a href="https://www.figma.com/design/MG9mnjpONtzH7MAdzaQyFx/Computer-aided-instruction-studies?node-id=0-1&t=h4rMUIGZnjfrkUor-1"
+                        target="_blank">
+
+                        <figure class="projects-img">
+                            <div class="projects-item-icon-box">
+                                <ion-icon name="eye-outline"></ion-icon>
+                            </div>
+
+                            <img src="./assets/image/project-16.jpg" alt="Computer Aided Instruction Studies"
+                                loading="lazy">
+                        </figure>
+                        <span class="project-texts">
+                            <h3 class="projects-title">Computer Aided Instruction Studies</h3>
+
+                            <p class="projects-category">UI/UX Design <br> <span style="font-size: 12px !important;">
+                                    Figma</span>
+                            </p>
+                        </span>
+                    </a>
+                </li>
+
+                <li class="projects-item  active" data-filter-item data-category="web development">
+                    <a href="https://hackwithjasper.netlify.app" target="_blank">
+
+                        <figure class="projects-img">
+                            <div class="projects-item-icon-box">
+                                <ion-icon name="eye-outline"></ion-icon>
+                            </div>
+
+                            <img src="./assets/image/project-5.png" alt="Jasper Lewis Portfolio Website" loading="lazy">
+                        </figure>
+                        <span class="project-texts">
+                            <h3 class="projects-title">Jasper Lewis Portfolio Website</h3>
+
+                            <p class="projects-category">Web development <br> <span style="font-size: 12px !important;">
+                                    Html, Css &
+                                    JavaScript</span></p>
+                        </span>
+                    </a>
+                </li>
+
+                <li class="projects-item  active" data-filter-item data-category="ui/ux design">
+                    <a href="https://www.figma.com/design/DD3GZw5AJQL16cm4zP34ZN/KNFT-NFT?node-id=0-1&t=AkQ2VHbWYizepKYq-1"
+                        target="_blank">
+
+                        <figure class="projects-img">
+                            <div class="projects-item-icon-box">
+                                <ion-icon name="eye-outline"></ion-icon>
+                            </div>
+
+                            <img src="./assets/image/project-13.jpg" alt="KNFT" loading="lazy">
+                        </figure>
+                        <span class="project-texts">
+                            <h3 class="projects-title">KNFT</h3>
+
+                            <p class="projects-category">UI/UX Design <br> <span style="font-size: 12px !important;">
+                                    Figma</span>
+                            </p>
+                        </span>
+                    </a>
+                </li>
+
+                <li class="projects-item  active" data-filter-item data-category="web development">
+                    <a href="https://resincraft.netlify.app" target="_blank">
+
+                        <figure class="projects-img">
+                            <div class="projects-item-icon-box">
+                                <ion-icon name="eye-outline"></ion-icon>
+                            </div>
+
+                            <img src="./assets/image/project-6.png" alt="Jewelry Store Template" loading="lazy">
+                        </figure>
+                        <span class="project-texts">
+                            <h3 class="projects-title">Jewelry Store Template</h3>
+
+                            <p class="projects-category">Web development <br> <span style="font-size: 12px !important;">
+                                    Html, Css &
+                                    JavaScript</span></p>
+                        </span>
+                    </a>
+                </li>
+
+                <li class="projects-item  active" data-filter-item data-category="ui/ux design">
+                    <a href="https://www.figma.com/design/lw77udFJZDMGxxWj5pfMeR/Safekan?node-id=0-1&t=uiZTK92NssgWgVQD-1"
+                        target="_blank">
+
+                        <figure class="projects-img">
+                            <div class="projects-item-icon-box">
+                                <ion-icon name="eye-outline"></ion-icon>
+                            </div>
+
+                            <img src="./assets/image/project-8.jpg" alt="Safekan" loading="lazy">
+                        </figure>
+                        <span class="project-texts">
+                            <h3 class="projects-title">Safekan</h3>
+
+                            <p class="projects-category">UI/UX Design <br> <span style="font-size: 12px !important;">
+                                    Figma</span>
+                            </p>
+                        </span>
+                    </a>
+                </li>
+
+                <li class="projects-item  active" data-filter-item data-category="ui/ux design">
+                    <a href="https://www.figma.com/design/eiAejMk7W3ImOKtxN3X8Mn/InRide?node-id=0-1&t=60sogAbw4rpcPWt0-1"
+                        target="_blank">
+
+                        <figure class="projects-img">
+                            <div class="projects-item-icon-box">
+                                <ion-icon name="eye-outline"></ion-icon>
+                            </div>
+
+                            <img src="./assets/image/project-17.jpg" alt="Inride" loading="lazy">
+                        </figure>
+                        <span class="project-texts">
+                            <h3 class="projects-title">Inride Landing Page</h3>
+
+                            <p class="projects-category">UI/UX Design <br> <span style="font-size: 12px !important;">
+                                    Figma</span>
+                            </p>
+                        </span>
+                    </a>
+                </li>
+
+                <li class="projects-item  active" data-filter-item data-category="ui/ux design">
+                    <a href="https://www.figma.com/design/yDM7HPRa1SFD42arqQoPEG/Care-Supply?node-id=0-1&t=ocUpr0ULdmZksTuA-1"
+                        target="_blank">
+
+                        <figure class="projects-img">
+                            <div class="projects-item-icon-box">
+                                <ion-icon name="eye-outline"></ion-icon>
+                            </div>
+
+                            <img src="./assets/image/project-15.jpg" alt="Care Supply" loading="lazy">
+                        </figure>
+                        <span class="project-texts">
+                            <h3 class="projects-title">Care Supply</h3>
+
+                            <p class="projects-category">UI/UX Design <br> <span style="font-size: 12px !important;">
+                                    Figma</span>
+                            </p>
+                        </span>
+                    </a>
+                </li>
+
+                <li class="projects-item  active" data-filter-item data-category="ui/ux design">
+                    <a href="https://www.figma.com/design/DkSSkfRgPo6PY5cZhjqRJo/Tech-all?node-id=0-1&t=y6Zck4xjrsmRRpeA-1"
+                        target="_blank">
+
+                        <figure class="projects-img">
+                            <div class="projects-item-icon-box">
+                                <ion-icon name="eye-outline"></ion-icon>
+                            </div>
+
+                            <img src="./assets/image/project-9.png" alt="Tech All" loading="lazy">
+                        </figure>
+                        <span class="project-texts">
+                            <h3 class="projects-title">Tech All</h3>
+
+                            <p class="projects-category">UI/UX Design <br> <span style="font-size: 12px !important;">
+                                    Figma</span>
+                            </p>
+                        </span>
+                    </a>
+                </li>
+
+                <li class="projects-item  active" data-filter-item data-category="ui/ux design">
+                    <a href="https://www.figma.com/design/BjMz2xW3l1RvgPyJ3t0rsa/Online-Shoe-Store?node-id=0-1&t=WwY133y63EJsM3cv-1"
+                        target="_blank">
+
+                        <figure class="projects-img">
+                            <div class="projects-item-icon-box">
+                                <ion-icon name="eye-outline"></ion-icon>
+                            </div>
+
+                            <img src="./assets/image/project-14.jpg" alt="Shoe Store" loading="lazy">
+                        </figure>
+                        <span class="project-texts">
+                            <h3 class="projects-title">Shoe Store</h3>
+
+                            <p class="projects-category">UI/UX Design <br> <span style="font-size: 12px !important;">
+                                    Figma</span>
+                            </p>
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </article>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <h2 class="section-title">What People Say</h2>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="testimonial-card" data-aos="fade-up-right" data-aos-delay="0">
+                        <div class="testimonial-content">
+                            "King's expertise in Python automation saved our team countless hours. He developed a robust
+                            data processing system that improved our efficiency by 200%. His problem-solving skills are
+                            exceptional!"
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-image">
+                                <ion-icon name="person-outline"></ion-icon>
+                            </div>
+                            <div class="author-info">
+                                <h4>David Anderson</h4>
+                                <p>CTO, Data Analytics Pro</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="testimonial-card" data-aos="fade-up-right" data-aos-delay="200">
+                        <div class="testimonial-content">
+                            "King's proficiency in MySQL and database optimization transformed our backend
+                            infrastructure. The queries he optimized now run 60% faster, significantly improving our
+                            application's performance."
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-image">
+                                <ion-icon name="person-outline"></ion-icon>
+                            </div>
+                            <div class="author-info">
+                                <h4>Michael Chang</h4>
+                                <p>Lead Developer, Tech Innovations</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="testimonial-card" data-aos="fade-up-right" data-aos-delay="400">
+                        <div class="testimonial-content">
+                            "King's Photoshop skills perfectly complemented his web development expertise. The graphics
+                            and UI elements he created gave our website a unique, professional identity."
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-image">
+                                <ion-icon name="person-outline"></ion-icon>
+                            </div>
+                            <div class="author-info">
+                                <h4>Rachel Thomas</h4>
+                                <p>Creative Director, Design Masters</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="testimonial-card" data-aos="fade-up-right" data-aos-delay="600">
+                        <div class="testimonial-content">
+                            "Working with King on our e-commerce platform was fantastic. His combination of PHP backend
+                            work and frontend design created a seamless shopping experience for our customers."
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-image">
+                                <ion-icon name="person-outline"></ion-icon>
+                            </div>
+                            <div class="author-info">
+                                <h4>Daniel Kim</h4>
+                                <p>E-commerce Manager, ShopTech</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="testimonial-card" data-aos="fade-up-right" data-aos-delay="800">
+                        <div class="testimonial-content">
+                            "King's expertise in Bootstrap and responsive design ensured our web application looked and
+                            performed perfectly across all devices. His attention to mobile optimization was
+                            outstanding."
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-image">
+                                <ion-icon name="person-outline"></ion-icon>
+                            </div>
+                            <div class="author-info">
+                                <h4>Mark Stevens</h4>
+                                <p>Mobile Solutions Lead, AppWorks</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination" data-aos="fade-up-right" data-aos-delay="0"></div>
+        </div>
+    </section>
+
+    <!-- contact section  -->
+    <div class="contact-body" style="margin-bottom: 150px;">
+        <div class="contact-container">
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <p class="section-subtitle">Contact</p>
+                    <h1>Have You Any Project?<br>Please Drop a Message</h1>
+                    <p>Get in touch and let me know how I can help. Fill out the form and I'll be in touch as soon as
+                        possible.</p>
+                    <div class="info-item" data-aos="fade-up-right">
+                        <ion-icon name="location-outline"></ion-icon>
+                        <div>
+                            <h3>Address:</h3>
+                            <p>13 Shelter Origin, Orozo, Abuja. Nigeria.</p>
+                        </div>
+                    </div>
+                    <div class="info-item" data-aos="fade-up-right">
+                        <ion-icon name="call-outline"></ion-icon>
+                        <div>
+                            <h3>Phone:</h3>
+                            <p>+234 9077249922</p>
+                        </div>
+                    </div>
+                    <div class="info-item" data-aos="fade-up-right">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <div>
+                            <h3>Email:</h3>
+                            <p>jethrojerrybj@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/jethro-jerry/" data-aos="fade-up-right"
+                            aria-label="LinkedIn" data-tooltip="LinkedIn">
+                            <ion-icon name="logo-linkedin"></ion-icon>
+                        </a>
+                        <a href="https://github.com/kingjethro999" data-aos="fade-up-right" aria-label="GitHub"
+                            data-tooltip="GitHub">
+                            <ion-icon name="logo-github"></ion-icon>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form" id="contact" data-aos="zoom-in-up" data-aos-delay="0">
+                    <form>
+                        <div class="form-group" data-aos="fade-up-right" data-aos-delay="200">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" placeholder="e.g John Doe" required>
+                        </div>
+                        <div class="form-group" data-aos="fade-up-right" data-aos-delay="400">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="e.g johndoe@mail.com" required>
+                        </div>
+                        <div class="form-group" data-aos="fade-up-right" data-aos-delay="600">
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" placeholder="Phone Number" required>
+                        </div>
+                        <div class="form-group" data-aos="fade-up-right" data-aos-delay="750">
+                            <label for="message">Message</label>
+                            <textarea id="message" placeholder="Write message..." required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn" data-aos="fade-up-right"
+                            data-aos-delay="900">SEND</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer section  -->
+    <footer class="footer">
+        <div class="footercontainer">
+
+            <p class="h1 logo">
+                <a href="https://github.com/kingjethro999">
+                    Jethro Jerry<span>.</span>
+                </a>
+            </p>
+
+            <p class="copyright" style="height: fit-content !important;">&copy; 2024 <a href="https://github.com/kingjethro999">JethWebz Development</a>. All
+                rights reserved
+            </p>
+
+        </div>
+    </footer>
+
+
+
+    <!-- 
+        - #GO TO TOP
+      -->
+
+    <a href="#top" class="go-top" data-go-top title="Go to Top">
+        <ion-icon name="arrow-up"></ion-icon>
+    </a>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            AOS.init({
+                duration: 400,
+                easing: 'ease-in-out',
+                once: true,
+                mirror: false
+            });
+        });
+    </script>
+    <script src="./assets/js/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
