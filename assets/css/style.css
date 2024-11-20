@@ -892,7 +892,7 @@ img {
 }
 
 .projects-item:hover {
-    opacity: 6;
+    opacity: 0.4;
 }
 
 .projects-item-icon-box {
