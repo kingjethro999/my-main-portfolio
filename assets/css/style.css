@@ -891,10 +891,6 @@ img {
     transform: scale(1.1);
 }
 
-.projects-img img:hover {
-    opacity: 0.4;
-}
-
 .projects-item-icon-box {
     position: absolute;
     top: 50%;
