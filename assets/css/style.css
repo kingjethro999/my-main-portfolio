@@ -913,7 +913,7 @@ img {
 }
 
 .projects-item:hover .projects-item-icon-box {
-   /* opacity: 1; */
+    opacity: 1;
     transform: translate(-50%, -50%) scale(1);
 }
 
