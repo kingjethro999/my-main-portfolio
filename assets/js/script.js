@@ -1,7 +1,7 @@
 //block watermark from chatbot
 document.querySelectorAll('span').forEach((el) => {
     if (el.textContent.trim() === "Powered by Smartsupp") {
-        el.style.display = "none";
+        el.style.setProperty('display', 'none', 'important');
     }
 });
 
