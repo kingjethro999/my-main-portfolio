@@ -1,3 +1,10 @@
+//block watermark from chatbot
+document.querySelectorAll('span').forEach((el) => {
+    if (el.textContent.trim() === "Powered by Smartsupp") {
+        el.style.display = "none";
+    }
+});
+
 
 // Initialize Swiper
 const swiper = new Swiper('.swiper', {
