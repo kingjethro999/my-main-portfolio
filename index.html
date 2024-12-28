@@ -13,6 +13,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400;700&family=Saira+Stencil+One&display=swap"
@@ -21,17 +23,17 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="./assets/css/style.css">
 
-<!-- Smartsupp Live Chat script -->
-<script type="text/javascript">
-var _smartsupp = _smartsupp || {};
-_smartsupp.key = '8eb112727b3571907b9154cc15f133548483a833';
-window.smartsupp||(function(d) {
-  var s,c,o=smartsupp=function(){ o._.push(arguments)};o._=[];
-  s=d.getElementsByTagName('script')[0];c=d.createElement('script');
-  c.type='text/javascript';c.charset='utf-8';c.async=true;
-  c.src='https://www.smartsuppchat.com/loader.js?';s.parentNode.insertBefore(c,s);
-})(document);
-</script>
+    <!-- Smartsupp Live Chat script -->
+    <script type="text/javascript">
+        var _smartsupp = _smartsupp || {};
+        _smartsupp.key = '8eb112727b3571907b9154cc15f133548483a833';
+        window.smartsupp || (function (d) {
+            var s, c, o = smartsupp = function () { o._.push(arguments) }; o._ = [];
+            s = d.getElementsByTagName('script')[0]; c = d.createElement('script');
+            c.type = 'text/javascript'; c.charset = 'utf-8'; c.async = true;
+            c.src = 'https://www.smartsuppchat.com/loader.js?'; s.parentNode.insertBefore(c, s);
+        })(document);
+    </script>
 </head>
 
 <body>
@@ -755,6 +757,21 @@ window.smartsupp||(function(d) {
         </div>
     </section>
 
+    <!-- Availability Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-8">My Availability</h2>
+            <div class="flex justify-center">
+                <div class="w-full max-w-md p-6 bg-zinc-950 text-zinc-50 rounded-xl shadow-lg">
+                    <h2 class="text-xl font-semibold mb-4 text-zinc-50">Days Open</h2>
+                    <div id="business-hours">
+                        <!-- Business hours will be inserted here by JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- contact section  -->
     <div class="contact-body" style="margin-bottom: 150px;">
         <div class="contact-container">
@@ -794,29 +811,31 @@ window.smartsupp||(function(d) {
                             data-tooltip="GitHub">
                             <ion-icon name="logo-github"></ion-icon>
                         </a>
-                        <a href="mailto:jethrojerrybj@gmail.com" data-aos="fade-up-right" data-tooltip="Mail" aria-label="Gmail"><i class="bi bi-envelope"></i></a>
+                        <a href="mailto:jethrojerrybj@gmail.com" data-aos="fade-up-right" data-tooltip="Mail"
+                            aria-label="Gmail"><i class="bi bi-envelope"></i></a>
                     </div>
                 </div>
                 <div class="contact-form" id="contact" data-aos="zoom-in-up" data-aos-delay="0">
                     <form action="https://formspree.io/f/mgveaano" method="POST">
-    <div class="form-group" data-aos="fade-up-right" data-aos-delay="200">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" placeholder="e.g John Doe" required>
-    </div>
-    <div class="form-group" data-aos="fade-up-right" data-aos-delay="400">
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="_replyto" placeholder="e.g johndoe@mail.com" required>
-    </div>
-    <div class="form-group" data-aos="fade-up-right" data-aos-delay="600">
-        <label for="phone">Phone:</label>
-        <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
-    </div>
-    <div class="form-group" data-aos="fade-up-right" data-aos-delay="750">
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" placeholder="Write message..." required></textarea>
-    </div>
-    <button type="submit" class="submit-btn" data-aos="fade-up-right" data-aos-delay="900">SEND</button>
-</form>
+                        <div class="form-group" data-aos="fade-up-right" data-aos-delay="200">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" placeholder="e.g John Doe" required>
+                        </div>
+                        <div class="form-group" data-aos="fade-up-right" data-aos-delay="400">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="_replyto" placeholder="e.g johndoe@mail.com" required>
+                        </div>
+                        <div class="form-group" data-aos="fade-up-right" data-aos-delay="600">
+                            <label for="phone">Phone:</label>
+                            <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
+                        </div>
+                        <div class="form-group" data-aos="fade-up-right" data-aos-delay="750">
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" placeholder="Write message..." required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn" data-aos="fade-up-right"
+                            data-aos-delay="900">SEND</button>
+                    </form>
                 </div>
             </div>
         </div>
@@ -832,7 +851,8 @@ window.smartsupp||(function(d) {
                 </a>
             </p>
 
-            <p class="copyright" style="height: fit-content !important;">&copy; <span id="year"></span> <a href="https://github.com/kingjethro999">JethWebz Development</a>. All
+            <p class="copyright" style="height: fit-content !important;">&copy; <span id="year"></span> <a
+                    href="https://github.com/kingjethro999">JethWebz Development</a>. All
                 rights reserved
             </p>
 
@@ -856,6 +876,34 @@ window.smartsupp||(function(d) {
         document.getElementById('year').textContent = new Date().getFullYear();
     </script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>// Business hours data
+        const businessHours = [
+            { day: 'Monday', time: '9:00 AM - 11:00 PM' },
+            { day: 'Tuesday', time: '9:00 AM - 11:00 PM' },
+            { day: 'Wednesday', time: '9:00 AM - 11:00 PM' },
+            { day: 'Thursday', time: '9:00 AM - 11:00 PM' },
+            { day: 'Friday', time: '9:00 AM - 11:00 PM' },
+            { day: 'Saturday', time: 'Open 24 Hours', isSpecial: 'twenty-four' },
+            { day: 'Sunday', time: 'Closed', isSpecial: 'closed' }
+        ];
+
+        // Render business hours
+        const businessHoursContainer = document.getElementById('business-hours');
+        businessHours.forEach(schedule => {
+            const scheduleElement = document.createElement('div');
+            scheduleElement.className = 'py-2 flex justify-between items-center border-b border-zinc-800 last:border-none gap-4';
+            scheduleElement.innerHTML = `
+                <span class="font-medium text-sm md:text-base">${schedule.day}</span>
+                <span class="text-xs md:text-sm ${schedule.isSpecial === 'closed' ? 'text-red-400' :
+                    schedule.isSpecial === 'twenty-four' ? 'text-green-400' :
+                        'text-zinc-400'
+                }">
+                    ${schedule.time}
+                </span>
+            `;
+            businessHoursContainer.appendChild(scheduleElement);
+        });
+    </script>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             AOS.init({
